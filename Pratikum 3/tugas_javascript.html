@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" size="30" id="firstName"> <BR></BR>
+    <label for="lastName">last Name</label>
+    <input type="text" name="lastName" size="30" id="lastName"> <BR></BR>
+    <input type="submit" name="sbm" value="Submit" id="sbmbtn">
+    <script>
+        document.getElementById("sbmbtn").onclick = function() {
+        var fName = document.getElementById("firstName").value;
+        var lName = document.getElementById("lastName").value;
+        if (fName == "" || lName == "") {
+            alert("Jangan ada yang kosong")
+        } else {
+            window.location.href = "#"
+            document.write("Selamat datang " + fName + " " + lName)  
+        }
+        }
+    </script>
+</body>
+</html>
