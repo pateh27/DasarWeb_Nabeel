@@ -9,7 +9,8 @@ echo"<BR>Total Skor Pemain Adalah <b>$poinPemain<b> poin<BR>";
 echo"Apakah pemain mendapatkan hadiah tambahan? (YA/TIDAK)<BR>";
 if ($poinPemain > 500) {
     $poinSetelahBonus = $poinPemain + 1000;
-    echo"Ya, anda mendapatkan hadiah tambahan.<br>Selamat anda mendapatkan hadiah tambahan berupa 1000 point 
+    echo"Ya, anda mendapatkan hadiah tambahan.<br>Selamat anda mendapatkan hadiah tambahan 
+    berupa 1000 poin 
     Sehingga poin ada menjadi $poinSetelahBonus dan TV";
 } else {
     echo"Tidak, anda tidak mendapatkan hadiah tambahan.";
