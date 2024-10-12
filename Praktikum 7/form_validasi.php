@@ -59,14 +59,7 @@
                     if (valid) {
                         var formData = $("#myForm").serialize();
 
-                        $.ajax({
-                            url: "proses_validasi.php",
-                            type: "POST",
-                            data: formData,
-                            success: function(response) {
-                                $("#hasil").html(response);
-                            }
-                        });
+                        
                     }
                 });
             });
