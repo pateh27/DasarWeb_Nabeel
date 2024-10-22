@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramalan Masa Depan</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/Coba.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body onload="tampilkanRamalan()">
-    <h1>Ramalan Masa Depan</h1>
-    <p id="ramalan"></p>
-    <button onclick="tampilkanRamalan()">Lihat Ramalan Baru</button>
-    <script src="listRamalan.js"></script>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">Mystic<span>Laughs</span></a>
+        <div class="navbar-menu">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kita</a>
+            <a href="#quotes">Kata Hari Ini</a>
+        </div>
+
+        <div class="sidebar">
+            <a href="#" id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+            <script src="sidebar.js"></script>
+        </div>
+    </nav>
+
+    
+    <section class="hero" id="home">
+        <main class="konten">
+            <h1>Ramalan Hari Ini</h1>
+            <p id="ramalan"></p>
+         <script src="listRamalan.js"></script>
+        </main>
+    </section>
+    <section id="about" class="about">
+        <div class="definisi">
+            <h2>Tentang Kita</h2>
+            <p>Selamat datang di dunia ramalan yang tidak biasa! Di sini, kami menggabungkan keseriusan ramalan dengan humor segar untuk memberi Anda prediksi yang selalu mengundang tawa. Setiap ramalan yang kami buat mungkin tidak selalu akurat, tapi pasti selalu menghibur. Dengan tim peramal lucu kami, masa depan tidak lagi membosankan! Kami percaya bahwa senyuman adalah jawaban terbaik untuk segala ketidakpastian. Bersiaplah untuk tertawa menghadapi esok hari, karena nasib tak harus selalu serius. Di sinilah ramalan bertemu lelucon, dan semua orang dipersilakan untuk tertawa bersama. Ingat, masa depan mungkin suram, tapi ramalan kami pasti cerah!</p> 
+        </div>
+        <img src="img/v1079-113c-removebg-preview.png" alt="thumbnail">
+    </section>
+
+    <section class="qotd" id="quotes">
+        <main class="konten-quotes">
+            <h1>Kata-Kata Massehhh</h1>
+            <p id="quote"></p>
+            <script src="listQuotes.js"></script>
+        </main>
+    </section>
 </body>
+<footer>
+    <div class="footer-content">
+        <p>Selamat datang di situs web ramalan kami. Kami menyediakan ramalan yang segar dan penuh humor untuk Anda.</p>
+        <a href="https://www.instagram.com/whonbl_/">Kunjungi Saya<br>Sang Misterius Dibalik Website Ini Ada</a>
+        <p class="creator">Dibuat oleh Sang Peramal Lucu</p>
+    </div>
+</footer>
 </html>
