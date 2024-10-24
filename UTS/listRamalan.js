@@ -62,5 +62,3 @@ var ramalan = [
 
 // Mengambil ramalan acak secara langsung
 document.getElementById("ramalan").innerHTML = ramalan[Math.floor(Math.random() * ramalan.length)];
-
-
